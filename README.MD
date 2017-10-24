@@ -38,10 +38,10 @@ friends:
 
 ## Options
 
-* **enable *(Boolean)*: Motd is enabled in channel
+* **enable** *(Boolean)*: Motd is enabled in channel
 * **motd** *(String)*: Simple message to display
 * **motd:singular** *(String)*: Simple message to display on new member
-* **motd:plugral** *(String)*: Simple message to display on new member**s**
+* **motd:plural** *(String)*: Simple message to display on new member**s**
 * **motdFile** *(String)*: Load motd from file 
 * **motdFile:singular** *(String)*: As motd:singular but load motd from file
 * **motdFile:plural** *(String)*: As motd:plural but load motd from file
