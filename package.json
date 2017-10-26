@@ -4,6 +4,7 @@
   "description": "Plugin for ircgrampp to show motd message",
   "main": "lib/index.js",
   "scripts": {
+    "prepublish": "rm -rf lib/* && npm run build",
     "test": "./node_modules/.bin/gulp gulp test",
     "lint": "./node_modules/.bin/gulp lint",
     "build": "./node_modules/.bin/gulp build"
