@@ -28,6 +28,6 @@
   },
   "dependencies": {
     "escape-html": "^1.0.3",
-    "ircgrampp-plugin": "^0.3.0"
+    "ircgrampp-plugin": "0.3.1"
   }
 }
