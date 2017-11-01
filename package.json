@@ -1,6 +1,6 @@
 {
   "name": "ircgrampp-plugin-motd",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Plugin for ircgrampp to show motd message",
   "main": "lib/index.js",
   "scripts": {
