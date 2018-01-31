@@ -102,18 +102,19 @@ export default class ChannelMotd {
         }
 
         let names = this._newusers.map((u) => {
-            let text;
+            let firstName = u[FIRST_NAME] || '';
+            let lastName = u[LAST_NAME] || '';
+            let completeName = (`${firstName} ${lastName}`).trim();
 
-            if (u.username) {
-                text = `@${u.username}`; 
+            if (completeName === "") {
+                completeName = u.username;
             }
 
-            text = `${u[FIRST_NAME]} ${u[LAST_NAME]}`;
-
             if (this._config.html) {
-                return `<a href="tg://user?id=${u.id}">${escape(text)}</a>`;
+                return `<a href="tg://user?id=${u.id}">` +
+                       `${escape(completeName)}</a>`;
             } else {
-                return `[${text}](tg://user?id=${u.id})`;
+                return `[${completeName}](tg://user?id=${u.id})`;
             }
         });
 

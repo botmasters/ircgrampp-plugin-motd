@@ -10,7 +10,7 @@ export default class MotdPlugin extends PluginBase {
     }
 
     getCompatibleVersion() {
-        return "~0.3.0";
+        return "~0.4.2";
     }
 
     updateChannel(channel, data, config) {
